@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { chore } from './lists'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Listed';
+  chores =[
+    new chore(1,'Feed the baby'),
+    new chore(2,'Wash the baby'),
+    new chore(3,'Walk the baby'),
+
+  ]
 }
